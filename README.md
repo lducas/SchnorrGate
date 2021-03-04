@@ -6,9 +6,9 @@
 _Claus Peter Schnorr_ <br />
 https://eprint.iacr.org/2021/232 <br />
 
-*Note:* This follows the version of March 3, not the one of March 1. This version is much easier to implement with existing lattice reduction software, as it only requires solving SVP in dimension 48 for a 400 bits number to be factored (the previous version mentionned dimensions unreachable by currently known techniques).<br />
+*Note:* This follows the version of March 3, not the one of March 1. This version is much easier to implement with existing lattice reduction software, as it only requires solving SVP in dimension 48 for a 400 bits number to be factored (the previous version mentioned dimensions unreachable by currently known techniques).<br />
 
-*Credit:* There is not much work behind the script itself. Most of the credit for this implementation goes to sage develloppers and maintainers, and to the FPLLL team (https://github.com/fplll/) for the underlying lattice reduction software.
+*Credit:* There is not much work behind the script itself. Most of the credit for this implementation goes to sage developers and maintainers, and to the FPLLL team (https://github.com/fplll/) for the underlying lattice reduction software.
 
 
 _Command Line Interface_
@@ -26,7 +26,7 @@ Running `b=40, n=47, t=1000`, we obtained `0 Factoring Relation found out of 100
 
 This suggest that the approach may be sensible, but that not all short vectors give rise to factoring relations, and that obtaining a sufficient success rate requires much larger lattice dimension than claimed in [Sch21]. 
 
-Personnal study (unfortunately, never written down cleanly) of this approach suggested me that this approach requires solving SVP in dimensions beyond reasonable, leading to a factorization algorithm much slower than the state of the art. My impression is that this is the consensus among experts having spent some time on it as well. 
+Personal study (unfortunately, never written down cleanly) of this approach suggested me that this approach requires solving SVP in dimensions beyond reasonable, leading to a factorization algorithm much slower than the state of the art. My impression is that this is the consensus among experts having spent some time on it as well. 
 
 I wish to recall that this approach is not particularly new; Ajtai [Ajt98] attributes it to a (lost ?) manuscript of Adleman while Schnorr mentions an article of Brillhard and Morrison [MB75]. Recent theoretical work on the cryptanalysis of module lattices are doing very similar things over number fields [LPSW19]. Interestingly, this construction can serve other purposes than factoring. For example, Ajtai [Ajt98] used it for a NP-hardness proof. Replacing real logarithm by discrete logarithm also lead to interesting ideas; Chor and Rivest use such a variant to solve lattice problem via easy factorization instances [CR88] inside an old-school lattice-based cryptosystem (see also [DP18] for an asymptotic analysis).
 
