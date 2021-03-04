@@ -52,8 +52,8 @@ https://eprint.iacr.org/2019/1035
 _B Chor, RL Rivest_ <br />
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.309.9452&rep=rep1&type=pdf
 
-[DP19]< br/>
-**Polynomial Time Bounded Distance Decoding near Minkowski’s Bound in Discrete Logarithm Lattices**< br/>
+[DP19]<br />
+**Polynomial Time Bounded Distance Decoding near Minkowski’s Bound in Discrete Logarithm Lattices**<br />
 _Léo Ducas and Cécile Pierrot_ <br />
 https://eprint.iacr.org/2018/146
 
