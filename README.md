@@ -8,7 +8,10 @@ https://eprint.iacr.org/2021/232 <br />
 
 *Note:* This follows the version of March 3, not the one of March 1. The latter is much easier to implement with existing lattice reduction software, as it only requires solving SVP in dimension 48 for a 400 bits number to be factored (the previous version mentionned dimensions unreachable by currently known techniques).<br />
 
-Command Line Interface
+*Credit:* There is not much work behind the script itself. Most of the credit for this implementation goes to sage develloppers and maintainers, and to the FPLLL team (https://github.com/fplll/) for the underlying lattice reduction software.
+
+
+_Command Line Interface_
 ```
 sage fac.sage b n t
 ```
