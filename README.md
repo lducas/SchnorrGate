@@ -28,7 +28,8 @@ This suggest that the approach may be sensible, but that not all short vectors g
 
 Personal study (unfortunately, never written down cleanly) of this approach suggested me that this approach requires solving SVP in dimensions beyond reasonable, leading to a factorization algorithm much slower than the state of the art. My impression is that this is the consensus among experts having spent some time on it as well. 
 
-I wish to recall that this approach is not particularly new; Ajtai [Ajt98] attributes it to a (lost ?) manuscript of Adleman while Schnorr mentions an article of Brillhard and Morrison [MB75]. Recent theoretical work on the cryptanalysis of module lattices are doing very similar things over number fields [LPSW19]. Interestingly, this construction can serve other purposes than factoring. For example, Ajtai [Ajt98] used it for a NP-hardness proof. Replacing real logarithm by discrete logarithm also lead to interesting ideas; Chor and Rivest use such a variant to solve lattice problem via easy factorization instances [CR88] inside an old-school lattice-based cryptosystem (see also [DP18] for an asymptotic analysis).
+I wish to recall that this approach is not particularly new; Ajtai [Ajt98] attributes it to a (lost ?) manuscript of Adleman while Schnorr mentions an article of Brillhard and Morrison [MB75]. Other experts have explored it, and some left very good notes as early as 2010 [Ver10].
+Recent theoretical work on the cryptanalysis of module lattices are doing very similar things over number fields [LPSW19]. Interestingly, this construction can serve other purposes than factoring. For example, Ajtai [Ajt98] used it for a NP-hardness proof. Replacing real logarithm by discrete logarithm also lead to interesting ideas; Chor and Rivest use such a variant to solve lattice problem via easy factorization instances [CR88] inside an old-school lattice-based cryptosystem (see also [DP18] for an asymptotic analysis).
 
 [Adl95] <br />
 **Factoring and Lattice Reduction** <br />
@@ -44,6 +45,11 @@ Math. Comp, 1975.
 **The shortest vector problem in L2 is NP-hard for randomized reductions** <br />
 _M. Ajtai_ <br />
 https://dl.acm.org/doi/pdf/10.1145/276698.276705 <br />
+
+[Ver10] <br />
+**A note on integer factorization using lattices** <br />
+_A. Vera_ <br />
+https://arxiv.org/pdf/1003.5461.pdf <br />
 
 [LPSW19] <br />
 **An LLL algorithm for module lattices** <br />
