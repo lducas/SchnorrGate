@@ -28,41 +28,67 @@ This suggest that the approach may be sensible, but that not all short vectors g
 
 Personal study (unfortunately, never written down cleanly) of this approach suggested me that this approach requires solving SVP in dimensions beyond reasonable, leading to a factorization algorithm much slower than the state of the art. My impression is that this is the consensus among experts having spent some time on it as well. 
 
-I wish to recall that this approach is not particularly new; Ajtai [Ajt98] attributes it to a (lost ?) manuscript of Adleman while Schnorr mentions an article of Brillhard and Morrison [MB75]. Other experts have explored it, and some left very good notes as early as 2010 [Ver10].
-Recent theoretical work on the cryptanalysis of module lattices are doing very similar things over number fields [LPSW19]. Interestingly, this construction can serve other purposes than factoring. For example, Ajtai [Ajt98] used it for a NP-hardness proof. Replacing real logarithm by discrete logarithm also lead to interesting ideas; Chor and Rivest use such a variant to solve lattice problem via easy factorization instances [CR88] inside an old-school lattice-based cryptosystem (see also [DP18] for an asymptotic analysis).
+## History and Related works
 
-[Adl95] <br />
-**Factoring and Lattice Reduction** <br />
-L. Adleman <br />
-(Manuscript, 1995)
+I wish to recall that this claim of polynomial time factoring is not particularly new: it was announced at Eurocrypt 2009. This claim has so far not been published at a peer-reviewed conference our journal. 
 
-[MB75] <br />
-**A method of factoring and the factorization of F7** <br />
-_J Brillhart, MA Morrison_ <br />
-Math. Comp, 1975.
+The approach itself is much older [Sch91] (Schnorr even makes mention of  an article of Brillhard and Morrison [MB75]). It has been very influencial (and hence, seriously explored, e.g. [Ver10]), but successful applications are in fact outside the realm if factoring. It is an inspiring serendipity story. 
 
-[Ajt98] <br />
-**The shortest vector problem in L2 is NP-hard for randomized reductions** <br />
-_M. Ajtai_ <br />
-https://dl.acm.org/doi/pdf/10.1145/276698.276705 <br />
+The particular construction of lattice was further explored by Adleman [Adl95], attempting to prove that some lattice problems (SVP) are at least as hard as factoring. Ajtai [Ajt98], while attempting to complete the goal of Adleman, instead found a proof that lattice problems are NP-hard.
 
-[Ver10] <br />
-**A note on integer factorization using lattices** <br />
-_A. Vera_ <br />
-https://arxiv.org/pdf/1003.5461.pdf <br />
+This construction made other appearances, for example in relation to the abc conjecture [Bri14]. A variant over number fields is also central to some recent study of reduction algorithm for module lattices [LPSW19]. 
 
-[LPSW19] <br />
-**An LLL algorithm for module lattices** <br />
-_C Lee, A Pellet-Mary, D Stehlé, A Wallet_ <br />
-https://eprint.iacr.org/2019/1035
+Another interesting variant of this lattice construction is the following: replace real logarithm by discrete logarithm. Chor and Rivest constructed a cryptosystem based on such lattices [CR88]. Stripping out all the crypto, and studying asymptotics, Cecile Pierrot and I [DP18] reinterpreted their algorithm as a lattice decoding algorithm (BDD). It is based on the reciprocal of Schnorr's idea, namely use an easy factoring instance to solve lattice problems.
+
 
 [CR88] <br />
 **A knapsack-type public key cryptosystem based on arithmetic in finite fields** <br />
 _B Chor, RL Rivest_ <br />
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.309.9452&rep=rep1&type=pdf
 
-[DP19]<br />
+[MB75] <br />
+**A method of factoring and the factorization of F7** <br />
+_J Brillhart, MA Morrison_ <br />
+Math. Comp, 1975.
+
+[Sch91]<br \>
+**Factoring integers and computing discrete logarithms via diophantine approximation** <br \>
+_Claus Peter Schnorr_ <br \>
+https://link.springer.com/chapter/10.1007/3-540-46416-6_24
+
+[Adl95] <br />
+**Factoring and Lattice Reduction** <br />
+_L. Adleman_ <br />
+https://raw.githubusercontent.com/lducas/SchnorrGate/main/LATFAC.pdf
+
+[Ajt98] <br />
+**The shortest vector problem in L2 is NP-hard for randomized reductions** <br />
+_M. Ajtai_ <br />
+https://dl.acm.org/doi/pdf/10.1145/276698.276705 <br />
+
+[Sch09]<br \>
+**Average Time Fast SVP and CVP Algorithms: Factoring Integers in Polynomial Time** <br \>
+_Claus Peter Schnorr_ <br \>
+https://eurocrypt2009rump.cr.yp.to/e074d37e10ad1ad227200ea7ba36cf73.pdf
+
+[Ver10] <br />
+**A note on integer factorization using lattices** <br />
+_A. Vera_ <br />
+https://arxiv.org/pdf/1003.5461.pdf <br />
+
+[Bri14]
+<br \>
+**Extremal examples in the abc conjecture** <br \>
+_C Bright_ <br \>
+https://cs.uwaterloo.ca/~cbright/talks/pmath944-talk.pdf
+
+[DP18]<br />
 **Polynomial Time Bounded Distance Decoding near Minkowski’s Bound in Discrete Logarithm Lattices**<br />
 _Léo Ducas and Cécile Pierrot_ <br />
 https://eprint.iacr.org/2018/146
+
+[LPSW19] <br />
+**An LLL algorithm for module lattices** <br />
+_C Lee, A Pellet-Mary, D Stehlé, A Wallet_ <br />
+https://eprint.iacr.org/2019/1035
 
