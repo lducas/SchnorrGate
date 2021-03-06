@@ -8,9 +8,6 @@ https://eprint.iacr.org/2021/232 <br />
 
 *Note:* This follows the version of March 3, not the one of March 1. This version is much easier to implement with existing lattice reduction software, as it only requires solving SVP in dimension 48 for a 400 bits number to be factored (the previous version mentioned dimensions unreachable by currently known techniques).<br />
 
-*Credit:* There is not much work behind the script itself. Most of the credit for this implementation goes to sage developers and maintainers, and to the FPLLL team (https://github.com/fplll/) for the underlying lattice reduction software.
-
-
 _Command Line Interface_
 ```
 sage fac.sage b n t
@@ -39,6 +36,11 @@ The particular construction of lattice was further explored by Adleman [Adl95], 
 This construction made other appearances, for example in relation to the abc conjecture [Bri14]. A variant over number fields is also central to some recent study of reduction algorithm for module lattices [LPSW19]. 
 
 Another interesting variant of this lattice construction is the following: replace real logarithm by discrete logarithm. Chor and Rivest constructed a cryptosystem based on such lattices [CR88]. Stripping out all the crypto, and studying asymptotics, Cecile Pierrot and I [DP18] reinterpreted their algorithm as a lattice decoding algorithm (BDD). It is based on the reciprocal of Schnorr's idea, namely use an easy factoring instance to solve lattice problems.
+
+**Acknowlegments:** There is not much work behind the script itself. Most of the credit for this implementation goes to sage developers and maintainers, and to the FPLLL team (https://github.com/fplll/) for the underlying lattice reduction software. I'm also thankful to Daniele Micciancio, Curtis Bright and Damien Stehle for precious comments and references on the history and related works. We should also thank Len Adleman for sharing his draft from 1995.
+
+## References
+
 
 
 [CR88] <br />
