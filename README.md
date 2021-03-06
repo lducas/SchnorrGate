@@ -30,7 +30,7 @@ Personal study (unfortunately, never written down cleanly) of this approach sugg
 
 ## History and Related works
 
-I wish to recall that this claim of polynomial time factoring is not particularly new: it was announced at Eurocrypt 2009 [Sch09]. This claim has so far not been published at a peer-reviewed conference our journal. 
+I wish to recall that this claim of polynomial time factoring is not particularly new: it was announced at Eurocrypt 2009 [Sch09]. This claim has so far not been published at a peer-reviewed conference or journal. 
 
 The approach itself is much older [Sch91] (Schnorr even makes mention of  an article of Brillhard and Morrison [MB75]). It has been very influencial (and hence, seriously explored, e.g. [Ver10]), but successful applications are in fact outside the realm if factoring. It is an inspiring serendipity story. 
 
