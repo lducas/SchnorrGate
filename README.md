@@ -30,7 +30,7 @@ Personal study (unfortunately, never written down cleanly) of this approach sugg
 
 ## History and Related works
 
-I wish to recall that this claim of polynomial time factoring is not particularly new: it was announced at Eurocrypt 2009. This claim has so far not been published at a peer-reviewed conference our journal. 
+I wish to recall that this claim of polynomial time factoring is not particularly new: it was announced at Eurocrypt 2009 [Sch09]. This claim has so far not been published at a peer-reviewed conference our journal. 
 
 The approach itself is much older [Sch91] (Schnorr even makes mention of  an article of Brillhard and Morrison [MB75]). It has been very influencial (and hence, seriously explored, e.g. [Ver10]), but successful applications are in fact outside the realm if factoring. It is an inspiring serendipity story. 
 
@@ -51,9 +51,9 @@ http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.309.9452&rep=rep1&type=
 _J Brillhart, MA Morrison_ <br />
 Math. Comp, 1975.
 
-[Sch91]<br \>
-**Factoring integers and computing discrete logarithms via diophantine approximation** <br \>
-_Claus Peter Schnorr_ <br \>
+[Sch91] <br />
+**Factoring integers and computing discrete logarithms via diophantine approximation** <br />
+_Claus Peter Schnorr_ <br />
 https://link.springer.com/chapter/10.1007/3-540-46416-6_24
 
 [Adl95] <br />
@@ -66,9 +66,9 @@ https://raw.githubusercontent.com/lducas/SchnorrGate/main/LATFAC.pdf
 _M. Ajtai_ <br />
 https://dl.acm.org/doi/pdf/10.1145/276698.276705 <br />
 
-[Sch09]<br \>
-**Average Time Fast SVP and CVP Algorithms: Factoring Integers in Polynomial Time** <br \>
-_Claus Peter Schnorr_ <br \>
+[Sch09] <br />
+**Average Time Fast SVP and CVP Algorithms: Factoring Integers in Polynomial Time** <br />
+_Claus Peter Schnorr_ <br />
 https://eurocrypt2009rump.cr.yp.to/e074d37e10ad1ad227200ea7ba36cf73.pdf
 
 [Ver10] <br />
@@ -76,10 +76,9 @@ https://eurocrypt2009rump.cr.yp.to/e074d37e10ad1ad227200ea7ba36cf73.pdf
 _A. Vera_ <br />
 https://arxiv.org/pdf/1003.5461.pdf <br />
 
-[Bri14]
-<br \>
-**Extremal examples in the abc conjecture** <br \>
-_C Bright_ <br \>
+[Bri14] <br />
+**Extremal examples in the abc conjecture** <br />
+_C Bright_ <br />
 https://cs.uwaterloo.ca/~cbright/talks/pmath944-talk.pdf
 
 [DP18]<br />
