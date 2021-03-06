@@ -1,5 +1,5 @@
 # SchnorrGate
-## Testing Schnorr's factoring Claim in Sage
+## Testing Schnorr's factoring Claim in SageMath [Sag]
 
 [Sch21] <br />
 **Fast Factoring Integers by SVP Algorithms** <br />
@@ -29,33 +29,31 @@ Personal study (unfortunately, never written down cleanly) of this approach sugg
 
 I wish to recall that this claim of polynomial time factoring is not particularly new: it was announced at Eurocrypt 2009 [Sch09]. This claim has so far not been published at a peer-reviewed conference or journal. 
 
-The approach itself is much older [Sch91] (Schnorr even makes mention of  an article of Brillhard and Morrison [MB75]). It has been very influencial (and hence, seriously explored, e.g. [Ver10]), but successful applications are in fact outside the realm of factoring. It is an inspiring serendipity story. 
+The approach itself is even older, dating from 1991, already from Schnorr [Sch91] (Schnorr even makes mention of  an article of Brillhard and Morrison [MB75]). It has been very influential (and hence, seriously explored, e.g. [Ver10]), but successful applications are in fact outside the realm of factoring. It is an inspiring serendipity story. 
 
-The particular construction of lattice was further explored by Adleman [Adl95], attempting to prove that some lattice problems (SVP) are at least as hard as factoring. Ajtai [Ajt98], while attempting to complete the goal of Adleman, instead found a proof that lattice problems are NP-hard.
+The particular construction of lattice was further explored by Adleman [Adl95], attempting to prove that some lattice problems (SVP, the Shortest Vector Problem) are at least as hard as factoring. Ajtai [Ajt98], while attempting to complete the initial goal of Adleman, instead found a proof of a much stronger statement: namely that SVP is NP-hard.
 
-This construction made other appearances, for example in relation to the abc conjecture [Bri14]. A variant over number fields is also central to some recent study of reduction algorithm for module lattices [LPSW19]. 
+This construction made other appearances, for example in relation to the _abc_ conjecture [Bri14]. A variant over number fields is also central to some recent study of reduction algorithm for module lattices [LPSW19]. 
 
-Another interesting variant of this lattice construction is the following: replace real logarithm by discrete logarithm. Chor and Rivest constructed a cryptosystem based on such lattices [CR88]. Stripping out all the crypto, and studying asymptotics, Cecile Pierrot and I [DP18] reinterpreted their algorithm as a lattice decoding algorithm (BDD). It is based on the reciprocal of Schnorr's idea, namely use an easy factoring instance to solve lattice problems.
+Another interesting variant of this lattice construction is the following: replace real logarithm by discrete logarithm. Chor and Rivest constructed a cryptosystem based on such lattices [CR88]. Stripping out all the crypto, and studying asymptotic, Cecile Pierrot and I [DP18] reinterpreted their algorithm as a lattice decoding algorithm (BDD). It is based on the reciprocal of Schnorr's idea, namely use an easy factoring instance to solve lattice problems.
 
-**Acknowlegments:** There is not much work behind the script itself. Most of the credit for this implementation goes to sage developers and maintainers, and to the FPLLL team (https://github.com/fplll/) for the underlying lattice reduction software. I'm also thankful to Daniele Micciancio, Curtis Bright and Damien Stehle for precious comments and references on the history and related works. We should also thank Len Adleman for sharing his draft from 1995.
+**Acknowledgments:** There is not much work behind the script itself. Most of the credit for this implementation goes to SageMath [Sage] developers and maintainers, and to the FPLLL team [fplll] for the underlying lattice reduction software. I'm also grateful to Daniele Micciancio, Curtis Bright, Damien Stehle, and Dima Pasechnik, for precious comments and references. We should also thank Len Adleman for sharing his draft [Adl95].
 
 ## References
 
-
-
 [CR88] <br />
 **A knapsack-type public key cryptosystem based on arithmetic in finite fields** <br />
-_B Chor, RL Rivest_ <br />
+_B. Chor, R.L. Rivest_ <br />
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.309.9452&rep=rep1&type=pdf
 
 [MB75] <br />
 **A method of factoring and the factorization of F7** <br />
-_J Brillhart, MA Morrison_ <br />
+_J. Brillhart, MA Morrison_ <br />
 Math. Comp, 1975.
 
 [Sch91] <br />
 **Factoring integers and computing discrete logarithms via diophantine approximation** <br />
-_Claus Peter Schnorr_ <br />
+_C. P. Schnorr_ <br />
 https://link.springer.com/chapter/10.1007/3-540-46416-6_24
 
 [Adl95] <br />
@@ -70,7 +68,7 @@ https://dl.acm.org/doi/pdf/10.1145/276698.276705 <br />
 
 [Sch09] <br />
 **Average Time Fast SVP and CVP Algorithms: Factoring Integers in Polynomial Time** <br />
-_Claus Peter Schnorr_ <br />
+_C. P. Schnorr_ <br />
 https://eurocrypt2009rump.cr.yp.to/e074d37e10ad1ad227200ea7ba36cf73.pdf
 
 [Ver10] <br />
@@ -80,16 +78,28 @@ https://arxiv.org/pdf/1003.5461.pdf <br />
 
 [Bri14] <br />
 **Extremal examples in the abc conjecture** <br />
-_C Bright_ <br />
+_C. Bright_ <br />
 https://cs.uwaterloo.ca/~cbright/talks/pmath944-talk.pdf
 
 [DP18]<br />
 **Polynomial Time Bounded Distance Decoding near Minkowski’s Bound in Discrete Logarithm Lattices**<br />
-_Léo Ducas and Cécile Pierrot_ <br />
+_L. Ducas and C. Pierrot_ <br />
 https://eprint.iacr.org/2018/146
 
 [LPSW19] <br />
 **An LLL algorithm for module lattices** <br />
-_C Lee, A Pellet-Mary, D Stehlé, A Wallet_ <br />
+_C. Lee, A. Pellet-Mary, D. Stehlé, and A. Wallet_ <br />
 https://eprint.iacr.org/2019/1035
+
+[Sage]  <br />
+**SageMath, the Sage Mathematics Software System (Version 9.0.0)**  <br />
+_The Sage Developers_ <br />
+https://www.sagemath.org  <br />
+
+[fplll]  <br />
+**FPLLL, a lattice reduction library** <br />
+_The FPLLL development team_ <br />
+https://www.sagemath.org  <br />
+
+
 
