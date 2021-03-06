@@ -1,5 +1,5 @@
 # SchnorrGate
-## Testing Schnorr's factoring Claim in SageMath [Sag]
+## Testing Schnorr's factoring Claim in SageMath [Sage]
 
 [Sch21] <br />
 **Fast Factoring Integers by SVP Algorithms** <br />
