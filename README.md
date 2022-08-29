@@ -101,5 +101,8 @@ https://www.sagemath.org  <br />
 _The FPLLL development team_ <br />
 https://www.sagemath.org  <br />
 
+Acknowledgments
+
+This work was supported by the European Union Horizon 2020 Research and Innovation Program Grant 780701 (PROMETHEUS).
 
 
